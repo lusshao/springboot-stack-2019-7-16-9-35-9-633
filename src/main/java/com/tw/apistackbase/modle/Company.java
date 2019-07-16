@@ -3,6 +3,7 @@ package com.tw.apistackbase.modle;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Company {
 
     private String companyName;
