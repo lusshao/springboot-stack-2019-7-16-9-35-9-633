@@ -33,9 +33,9 @@ public class CompanyController {
         return companyService.getCertainCompanyAllEmployees(index);
     }
 
-    @GetMapping(value = "/companies",params = "page")
-    public List<Company> getCompanyBetweenPageToAddSize(@RequestParam int page){
-        return companyService.getCompanyBetweenPageToAddSize(page,2);
+    @GetMapping(value = "/companies",params = {"page","pageSize"})
+    public List<Company> getCompanyBetweenPageToAddSize(@RequestParam int page,@RequestParam int pageSize){
+        return companyService.getCompanyBetweenPageToAddSize(page,pageSize);
     }
 
     @PostMapping("/companies")
