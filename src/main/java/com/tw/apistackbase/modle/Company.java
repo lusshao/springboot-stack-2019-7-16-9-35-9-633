@@ -6,6 +6,15 @@ import java.util.List;
 
 public class Company {
 
+    public Company() {
+    }
+
+    public Company(String companyName, int employeeNumber, List<Employee> employees) {
+        this.companyName = companyName;
+        this.employeeNumber = employeeNumber;
+        this.employees = employees;
+    }
+
     private String companyName;
     private int employeeNumber;
     private List<Employee> employees = new ArrayList<>();
